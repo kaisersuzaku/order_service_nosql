@@ -21,3 +21,4 @@ The product on event 12.12 perfomed well means many customer ordering that produ
 4. Add new document on 'product' (fill code and stock field)
 5. run service using go run main.go on service directory or build it's executable file first.
 6. hit : curl -X POST -d '{"id":"somegeneratedidfrommongodbdocument", "qty":1}' http://localhost:7789/order-product
+7. To use hitter to test api : go to folder 'cmd' then 'go run main.go id loop'. For Example : 'go run main.go 60a8921abea0d20007330b9b 20'. Please change the args id using document id generated from your mongodb and loop with some positive integer.
