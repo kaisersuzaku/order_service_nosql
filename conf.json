@@ -1,0 +1,10 @@
+{
+    "db":{
+        "host":"172.23.0.1",
+        "port":"30003",
+        "username":"root",
+        "password":"example",
+        "name":"online_store",
+        "collections":["product"]
+    }
+}
