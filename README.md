@@ -15,7 +15,7 @@ The product on event 12.12 perfomed well means many customer ordering that produ
 2. Use mongodb (the versions which have transaction feature). Using this, inside transaction, when trying to update document which during transaction there are other process modified the doc, the update inside transaction will return error write conflict. This will handle the race condition using because will return write conflict and then we can add retry logic on order service.
 
 # How to use the service
-1. Prepare mongodb server with it's replicas to be able to use transaction
+1. Prepare mongodb server with it's replicas to be able to use transaction (docker-compose example for mongodb replicas is on folder docs)
 2. Fill conf.json with respected values
 3. Create database with name 'online_store' and collection with name 'product'
 4. Add new document on 'product' (fill code and stock field)
